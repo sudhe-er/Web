@@ -1,0 +1,154 @@
+*{
+	box-sizing:border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff1e6;
+    color: #2d3142;;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.container-navbar {
+	
+	display:flex;
+	justify-content:space-between;
+	margin: 0 90px 0 0;
+	padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0); /* Initial background color with some opacity */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+.container-navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent background when scrolled */
+}
+	
+.nav-links {
+  list-style-type: none; /* Remove default list styles */
+  display: flex; /* Display links horizontally */
+}
+	.nav-links li {
+  margin-left: 10px; /* Adjust spacing between list items */
+}
+
+
+.nav-links li a {
+  color: inherit; /* Inherit text color from parent */
+  text-decoration: none; /* Remove underline from links */
+}
+header {
+    background-color: #ffff;
+    color: #2d3142;
+    padding: 20px 0;
+    /*position: fixed;*/
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+  
+}
+
+nav ul li a {
+     color:#2d3142;
+    text-decoration: none;
+    padding: 10 10 10 10;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #84a98c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.about{
+	display:flex;
+	flex-direction:row;
+	align-content:center;
+	justify-content:space-between;
+	/*padding:10px 90px;
+	margin: 10px 100px;	
+	width: 500px;*/
+}
+
+.about img {
+
+	width: 100vw;	
+	height: 679px;	
+	background-size: cover;
+	
+	background-repeat: no-repeat;
+
+	background-position:center center;
+	background-attachment: fixed;
+}
+
